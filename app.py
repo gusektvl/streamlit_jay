@@ -26,32 +26,16 @@ from settings import *
 
 fred = Fred(api_key='adf294d9c5f0940de2dc75f248e017ae')
 
-dict_reits = {
-    '마스턴프리미어리츠':'357430','맥쿼리인프라':'088980','제이알글로벌리츠':'348950','TIGER 리츠부동산인프라':'329200','ESR켄달스퀘어리츠':'365550','롯데리츠':'330590','SK리츠':'395400','코람코라이프인프라리츠':'357120','신한알파리츠':'293940','이리츠코크렙':'088260','신한서부티엔디리츠':'404990','디앤디플랫폼리츠':'377190','NH올원리츠':'400760','미래에셋글로벌리츠':'396690','NH프라임리츠':'338100','미래에셋맵스리츠':'357250','이지스밸류리츠':'334890','이지스레지던스리츠':'350520','TIGER 미국MSCI리츠(합성 H)':'182480','코람코더원리츠':'417310','KB스타리츠':'432320','한화리츠':'451800','삼성FN리츠':'448730'
-}
-
-dict_macro = {
-    '주간실업수당청구':'FRED:ICSA',
-    '소비자심리지수':'FRED:UMCSENT',
-    '주택판매지수':'FRED:HSN1F',
-    '실업률':'FRED:UNRATE',
-    'M2':'FRED:M2SL',
-    '하이일드 채권 스프레드':'FRED:BAMLH0A0HYM2',
-}
-
-
 def img_to_bytes(img_path):
     img_bytes = Path(img_path).read_bytes()
     encoded = base64.b64encode(img_bytes).decode()
     return encoded
 
-
 # Initial page config
 st.set_page_config(
     page_title="Jay's Park",
     layout="wide",
-    initial_sidebar_state="expanded"
-)
+    initial_sidebar_state="expanded")
 
 
 styles = {

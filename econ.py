@@ -1,6 +1,14 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
+dict_macro = {
+    '주간실업수당청구':'FRED:ICSA',
+    '소비자심리지수':'FRED:UMCSENT',
+    '주택판매지수':'FRED:HSN1F',
+    '실업률':'FRED:UNRATE',
+    'M2':'FRED:M2SL',
+    '하이일드 채권 스프레드':'FRED:BAMLH0A0HYM2',
+}
 
 def macro_FRED():
     st.selectbox(
