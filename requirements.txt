@@ -1,0 +1,16 @@
+requests
+streamlit
+pandas
+pandas_ta
+numpy
+datetime
+plotly
+bs4
+finance-datareader
+yfinance
+altair
+streamlit-extras
+streamlit-lightweight-charts
+streamlit-option-menu
+fredapi
+pygwalker
