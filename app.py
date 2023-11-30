@@ -238,6 +238,21 @@ styles = {
 menu = {
     'title': 'Test',
     'items': {
+        'Backtesting': {
+            'action': None,
+            'item_icon': 'building',
+            'submenu': {
+                'title': None,
+                'items': {
+                    'Test': {'action': backtesting_test, 'item_icon': 'list-task', 'submenu': None},
+                },
+                'menu_icon': None,
+                'default_index': 0,
+                'with_view_panel': 'main',
+                'orientation': 'horizontal',
+                'styles': styles
+            }
+        },
         'REITs' : {
             'action': None,
             'item_icon': 'building',
