@@ -50,7 +50,7 @@ menu = {
     'items': {
         'Backtesting': {
             'action': None,
-            'item_icon': 'building',
+            'item_icon': 'rewind',
             'submenu': {
                 'title': None,
                 'items': {
