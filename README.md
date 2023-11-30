@@ -1,1 +1,0 @@
-# VOGO HEDGE 
