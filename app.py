@@ -21,6 +21,8 @@ import pygwalker as pyg
 from backtesting import backtesting_test
 import streamlit.components.v1 as components
 from reits import *
+from econ import *
+from settings import *
 
 fred = Fred(api_key='adf294d9c5f0940de2dc75f248e017ae')
 
@@ -51,57 +53,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-
-symbol_list = [{"name": code, "displayName": name} for name, code in dict_reits.items()]
-# JSON 형식의 문자열로 변환
-json_string = json.dumps(symbol_list, ensure_ascii=False)
-
-
-
-
-
-
-
-def macro_FRED():
-    st.selectbox(
-        label = '지표 선택',
-        options = list(dict_macro.keys())
-    )
-
-def macro_calendar():
-    components.html(
-        """
-        <!-- TradingView Widget BEGIN -->
-        <div class="tradingview-widget-container">
-          <div class="tradingview-widget-container__widget"></div>
-          <div class="tradingview-widget-copyright"><a href="https://kr.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">트레이딩뷰에서 모든 시장 추적</span></a></div>
-          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
-          {
-          "colorTheme": "light",
-          "isTransparent": false,
-          "width": "1200",
-          "height": "2000",
-          "locale": "en",
-          "importanceFilter": "-1,0,1",
-          "countryFilter": "us,eu,it,nz,ch,au,fr,jp,za,tr,ca,de,mx,es,gb"
-        }
-          </script>
-        </div>
-        <!-- TradingView Widget END -->
-        <!-- TradingView Widget END -->
-        """,
-        width=1200, height=2000
-    )
-
-
-def macro_analysis():
-    st.text('analysis')
-
-def settings_panel_1():
-    st.markdown('### Security rules')
-
-def setting_panel_2():
-    st.markdown('### Blah, blah, blah, ....')
 
 styles = {
     "container": {"margin": "0px !important", "padding": "0!important", "align-items": "stretch", "background-color": "transparent"},
