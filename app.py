@@ -18,6 +18,7 @@ from datetime import date
 from datetime import timedelta
 from fredapi import Fred
 import pygwalker as pyg
+from backtesting import backtesting_test
 import streamlit.components.v1 as components
 
 fred = Fred(api_key='adf294d9c5f0940de2dc75f248e017ae')
