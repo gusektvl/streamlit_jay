@@ -63,7 +63,7 @@ menu = {
                 'styles': styles
             }
         },
-        'REITs' : {
+        "Jay's" : {
             'action': None,
             'item_icon': 'building',
             'submenu': {
