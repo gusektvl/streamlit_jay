@@ -7,7 +7,7 @@ def news():
     url = "https://newsapi.org/v2/top-headlines?country=kr&apiKey=79fc0e8d84134b8e896750585f7192e4"
     r = requests.get(url)
     data = r.json()
-    articles = data['articles']
+    articles = pd.DataFrame(data['articles'])[['source', 'title', 'description', 'url','publishedAt']]
     components.html(
         st.dataframe(articles), width=1200, height=2000
     )

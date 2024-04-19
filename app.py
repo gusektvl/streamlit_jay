@@ -26,6 +26,7 @@ from econ import *
 from settings import *
 from dart import *
 from alphavantage import *
+from deep_translator import GoogleTranslator
 
 
 fred = Fred(api_key='adf294d9c5f0940de2dc75f248e017ae')
@@ -73,11 +74,11 @@ menu = {
             'submenu': {
                 'title': None,
                 'items': {
-                    'News' : {'action': news, 'item_icon': 'list-task', 'submenu': None},
-                    'Sector' : {'action': sector, 'item_icon': 'list-task', 'submenu': None},
-                    'Stock' : {'action': company, 'item_icon': 'graph-up', 'submenu': None},
-                    'Screener' : {'action': screener, 'item_icon': 'cart4', 'submenu': None},
-                    'Backtesting' : {'action': backtesting, 'item_icon': 'rewind', 'submenu': None},
+                    'News': {'action': news, 'item_icon': 'list-task', 'submenu': None},
+                    'Sector': {'action': sector, 'item_icon': 'list-task', 'submenu': None},
+                    'Stock': {'action': company, 'item_icon': 'graph-up', 'submenu': None},
+                    'Screener': {'action': screener, 'item_icon': 'cart4', 'submenu': None},
+                    'Backtesting': {'action': backtesting, 'item_icon': 'rewind', 'submenu': None},
                     },
                 'menu_icon': None,
                 'default_index': 0,
