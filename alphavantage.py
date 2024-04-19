@@ -32,4 +32,4 @@ def alphavantage_analytics():
     url = 'https://alphavantageapi.co/timeseries/analytics?SYMBOLS='+symbols+'&RANGE=2023-07-01&RANGE=2023-08-31&INTERVAL=DAILY&OHLC=close&CALCULATIONS=MEAN,STDDEV,CORRELATION&apikey=demo'
     r = requests.get(url)
     data_analytics = r.json()
-    st.dataframe(data_analytics['payload']['RETURNS_CALCULATIONS']['STDDEV'])
+    st.dataframe(pd.DataFrame(data_analytics['payload']['RETURNS_CALCULATIONS']['STDDEV'], index=[0]).T)
