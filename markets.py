@@ -10,13 +10,11 @@ def news():
     data = r.json()
     articles = pd.DataFrame(data['articles'])[['source', 'title', 'description', 'url', 'publishedAt']]
     components.html(
-        st.dataframe(articles), width=1200, height=2000
+        st.dataframe(articles)
     )
 
 def sector():
-    components.html(
-        width=1200, height=1200
-    )
+    components.html()
 
 
 def company():
