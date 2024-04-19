@@ -14,14 +14,14 @@ def alphavantage_test():
     if 'top_gainers' in data_topgainer:
         st.subheader('Top Gainers')
         df_gainers = pd.DataFrame(data_topgainer['top_gainers'])
-        st.dataframe(df_gainers.style.hide_index())
+        st.dataframe(df_gainers, hide_index=True)
 
     if 'top_losers' in data_topgainer:
         st.subheader('Top Losers')
         df_losers = pd.DataFrame(data_topgainer['top_losers'])
-        st.dataframe(df_losers.style.hide_index())
+        st.dataframe(df_losers, hide_index=True)
 
     if 'most_actively_traded' in data_topgainer:
         st.subheader('Most Actively Traded')
         df_traded = pd.DataFrame(data_topgainer['most_actively_traded'])
-        st.dataframe(df_traded.style.hide_index())
+        st.dataframe(df_traded, hide_index=True)
