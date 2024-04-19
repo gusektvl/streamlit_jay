@@ -110,12 +110,7 @@ def reits_sector():
     )
 
 def company():
-    list_reits = ['삼성FN리츠', '한화리츠', 'KB스타리츠', '마스턴프리미어리츠', '코람코더원리츠', '신한서부티엔디리츠', '미래에셋글로벌리츠', 'NH올원리츠', 'SK리츠','디앤디플랫폼리츠', 'ESR켄달스퀘어리츠', '코람코라이프인프라리츠', '제이알글로벌리츠', '미래에셋맵스리츠', '이지스레지던스리츠', '이지스밸류리츠', 'NH프라임리츠', '롯데리츠', '신한알파리츠', '이리츠코크렙', '모두투어리츠', '케이탑리츠', '에이리츠']
-    st.write("총 " + str(len(list_reits)) + " 종목")
-    select_reit = st.selectbox(label='종목', options=sorted(list_reits))
-    code_reit = dict_reits[select_reit]
-    ticker = "KRX:"+code_reit
-    html_code =  """
+    html_code ="""
         <!doctype html>
         <html lang="en">
             <head>
@@ -274,7 +269,7 @@ def company():
             </head>
             <body>
                 <header>
-                    <a id="site-logo" href="#">TradingVista</a>
+                    <a id="site-logo" href="#">Test</a>
                     <input type="search" placeholder="Search..." />
                 </header>
                 <nav id="ticker-tape"></nav>
