@@ -115,8 +115,7 @@ def company():
     select_reit = st.selectbox(label='종목', options=sorted(list_reits))
     code_reit = dict_reits[select_reit]
     ticker = "KRX:"+code_reit
-    components.html(
-        """
+    html_code =  """
         <!doctype html>
         <html lang="en">
             <head>
@@ -579,10 +578,8 @@ def company():
                 }
             </script>
         </html>
-        """,
-        height=3000,
-        width=1350
-    )
+        """
+    components.html(html_code, height=3000, width=1350)
 
 def reits_screener():
     components.html(
