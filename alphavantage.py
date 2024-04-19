@@ -4,7 +4,7 @@ import requests
 import streamlit as st
 
 def alphavantage_test():
-    url_top = 'https://www.alphavantage.co/query?function=TOP_GAINERS_LOSERS&apikey= B8DRZT1OHQPV2UAV'
+    url_top = 'https://www.alphavantage.co/query?function=TOP_GAINERS_LOSERS&apikey=B8DRZT1OHQPV2UAV'
     r_top = requests.get(url_top)
     data = r_top.json()
     st.title('Top Gainers, Losers, and Most Actively Traded US Tickers')
