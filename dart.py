@@ -54,3 +54,10 @@ def dart_test():
         st.dataframe(data_display)  # 데이터 프레임을 통해 상호작용 가능한 테이블 표시
     else:
         st.write("No data available")
+
+
+
+def test():
+    key = '4QXc6NSiql94S7pQDnuZuwEjsbjgEHazecC6hKLrM%2Ff3hQ41gQdSvVuklo%2BHRkUKbcGiDB0f1ehD3t8MBCf7tg%3D%3D'
+    url = "http://apis.data.go.kr/1160100/service/GetFinaStatInfoService_V2/getSummFinaStat_V2?pageNo=1&numOfRows=1&resultType=json&fnccmpNm=%EA%B9%80%EC%B2%9C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89&serviceKey="+key
+    r = requests.get(url)
