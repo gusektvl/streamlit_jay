@@ -1,5 +1,7 @@
 import streamlit as st
 import streamlit.components.v1 as components
+import requests
+impot streamlit as st
 
 def alphavantage_test():
     url_top = 'https://www.alphavantage.co/query?function=TOP_GAINERS_LOSERS&apikey= B8DRZT1OHQPV2UAV'
