@@ -26,6 +26,7 @@ from settings import *
 from dart import *
 from alphavantage import *
 
+
 fred = Fred(api_key='adf294d9c5f0940de2dc75f248e017ae')
 
 def img_to_bytes(img_path):

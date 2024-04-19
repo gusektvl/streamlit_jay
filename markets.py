@@ -1,6 +1,7 @@
 import requests
 import streamlit as st
 import streamlit.components.v1 as components
+from newsapi import NewsApiClient
 
 def news():
     url = "https://newsapi.org/v2/top-headlines?country=kr&apiKey=79fc0e8d84134b8e896750585f7192e4"
