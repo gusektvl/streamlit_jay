@@ -14,4 +14,4 @@ streamlit-lightweight-charts
 streamlit-option-menu
 fredapi
 pygwalker
-newspai-python
+newsapi-python
