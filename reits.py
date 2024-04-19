@@ -16,7 +16,7 @@ def news():
   "feedMode": "market",
   "market": "index",
   "isTransparent": false,
-  "displayMode": "adaptive",
+  "displayMode": "regular",
   "width": "1200",
   "height": "2000",
   "colorTheme": "light",
