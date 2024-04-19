@@ -63,7 +63,7 @@ menu = {
                 'styles': styles
             }
         },
-        "Jay's" : {
+        "Markets" : {
             'action': None,
             'item_icon': 'building',
             'submenu': {
