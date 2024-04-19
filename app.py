@@ -130,8 +130,8 @@ menu = {
                 'styles': styles
             }
         },
-        'Alpha vantage_test': {
-            'action': None, 'item_icon': 'gear', 'submenu': {
+        'Abroad Market': {
+            'action': None, 'item_icon': 'airplane-engines', 'submenu': {
                 'title': None,
                 'items': {
                     'test': {'action': alphavantage_test, 'item_icon': 'key', 'submenu': None},
