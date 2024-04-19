@@ -23,6 +23,7 @@ import streamlit.components.v1 as components
 from reits import *
 from econ import *
 from settings import *
+from dart import *
 
 fred = Fred(api_key='adf294d9c5f0940de2dc75f248e017ae')
 
@@ -91,6 +92,21 @@ menu = {
                     'Calendar': {'action': macro_calendar, 'item_icon': 'calendar-event', 'submenu': None},
                     'Yield' : {'action': macro_FRED, 'item_icon': 'graph-up', 'submenu': None},
                     'Analysis': {'action': macro_analysis, 'item_icon': 'lightning', 'submenu': None}
+                },
+                'menu_icon': None,
+                'default_index': 0,
+                'with_view_panel': 'main',
+                'orientation': 'horizontal',
+                'styles': styles
+            }
+        },
+        'Dart' : {
+            'action': None,
+            'item_icon': 'bank',
+            'submenu': {
+                'title': None,
+                'items': {
+                    'Dart': {'action': dart_test, 'item_icon': 'calendar-event', 'submenu': None},
                 },
                 'menu_icon': None,
                 'default_index': 0,
