@@ -11,7 +11,7 @@ def news():
         st.dataframe(articles), width=1200, height=2000
     )
 
-def reits_sector():
+def sector():
     components.html(
         width=1200, height=1200
     )
@@ -483,7 +483,7 @@ def company():
         """
     components.html(html_code, height=3000, width=1350)
 
-def reits_screener():
+def screener():
     components.html(
         """
         <!-- TradingView Widget BEGIN -->
@@ -508,6 +508,6 @@ def reits_screener():
         width=1200, height=1500
     )
 
-def reits_backtesting():
+def backtesting():
     st.text('backtester...')
 
