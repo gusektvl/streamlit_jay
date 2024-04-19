@@ -5,7 +5,7 @@ import streamlit as st
 import pandas as pd
 
 def alphavantage_test():
-    url_top = 'https://www.alphavantage.co/query?function=TOP_GAINERS_LOSERS&apikey=B8DRZT1OHQPV2UAV'
+    url_top = 'https://www.alphavantage.co/query?function=TOP_GAINERS_LOSERS&apikey=demo'
     r_top = requests.get(url_top)
     data = r_top.json()
     st.title('Top Gainers, Losers, and Most Actively Traded US Tickers')
@@ -25,3 +25,11 @@ def alphavantage_test():
     st.header('Most Actively Traded')
     df_active = pd.DataFrame(data['most_actively_traded'])
     st.dataframe(df_active)
+
+def alphavantage_analytics():
+    import requests
+    symbols="AAPL,MSFT,IBM"
+    url = 'https://alphavantageapi.co/timeseries/analytics?SYMBOLS='+symbols+'&RANGE=2023-07-01&RANGE=2023-08-31&INTERVAL=DAILY&OHLC=close&CALCULATIONS=MEAN,STDDEV,CORRELATION&apikey=demo'
+    r = requests.get(url)
+    data_analytics = r.json()
+    st.dataframe(data_analytics)

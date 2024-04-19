@@ -135,6 +135,7 @@ menu = {
                 'title': None,
                 'items': {
                     'test': {'action': alphavantage_test, 'item_icon': 'key', 'submenu': None},
+                    'test2': {'action': alphavantage_analytics, 'item_icon': 'key', 'submenu': None},
                 },
                 'menu_icon': None,
                 'default_index': 0,
