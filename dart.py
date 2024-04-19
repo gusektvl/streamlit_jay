@@ -3,6 +3,7 @@ import streamlit.components.v1 as components
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
+import datetime as dt
 
 def fetch_dart_disclosures(url):
     response = requests.get(url)
@@ -31,7 +32,8 @@ def fetch_dart_disclosures(url):
 
 def dart_test():
     st.title('DART Recent Disclosures')
-    url = "https://dart.fss.or.kr/dsac001/mainAll.do"
+    date = dt.datetime.today().strftime("%Y.%m.%d")
+    url = "https://dart.fss.or.kr/dsac001/mainAll.do?selectDate="+date+"&sort=&series=&mdayCnt=0"
     data = fetch_dart_disclosures(url)
 
     if not data.empty:
