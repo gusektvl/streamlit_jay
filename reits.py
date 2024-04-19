@@ -17,8 +17,8 @@ def news():
   "market": "index",
   "isTransparent": false,
   "displayMode": "adaptive",
-  "width": "100%",
-  "height": "300%",
+  "width": "1200",
+  "height": "2000",
   "colorTheme": "light",
   "locale": "en"
 }
@@ -26,7 +26,7 @@ def news():
 </div>
 <!-- TradingView Widget END -->
         """,
-        width=1200, height=2000
+    width=1200, height=2000
     )
 
 def reits_sector():
