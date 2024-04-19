@@ -247,11 +247,3 @@ def main():
     )
 
     return None
-
-
-##########################
-# Main body of cheat sheet
-##########################
-
-if __name__ == '__main__':
-    main()
