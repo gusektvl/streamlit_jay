@@ -17,6 +17,7 @@ from streamlit_option_menu import option_menu
 from datetime import date
 from datetime import timedelta
 from fredapi import Fred
+from newsapi import NewsApiClient
 import pygwalker as pyg
 from backtesting import backtesting_test
 import streamlit.components.v1 as components
