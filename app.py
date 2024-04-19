@@ -134,6 +134,7 @@ menu = {
             'action': None, 'item_icon': 'airplane-engines', 'submenu': {
                 'title': None,
                 'items': {
+                    'Market Status': {'action': alphavantage_mktstatus, 'item_icon': 'key', 'submenu': None},
                     'test': {'action': alphavantage_test, 'item_icon': 'key', 'submenu': None},
                     'test2': {'action': alphavantage_analytics, 'item_icon': 'key', 'submenu': None},
                 },

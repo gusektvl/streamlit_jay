@@ -4,6 +4,13 @@ import requests
 import streamlit as st
 import pandas as pd
 
+def alphavantage_mktstatus():
+    url = 'https://www.alphavantage.co/query?function=MARKET_STATUS&apikey=demo'
+    r = requests.get(url)
+    data = r.json()
+    st.dataframe(data)
+
+
 def alphavantage_test():
     url_top = 'https://www.alphavantage.co/query?function=TOP_GAINERS_LOSERS&apikey=demo'
     r_top = requests.get(url_top)
@@ -29,7 +36,7 @@ def alphavantage_test():
 def alphavantage_analytics():
     import requests
     symbols="AAPL,MSFT,IBM,005930.KS"
-    url = 'https://alphavantageapi.co/timeseries/analytics?SYMBOLS='+symbols+'&RANGE=2023-07-01&RANGE=2023-08-31&INTERVAL=DAILY&OHLC=close&CALCULATIONS=MEAN,STDDEV,CORRELATION&apikey=demo'
+    url = 'https://alphavantageapi.co/timeseries/analytics?SYMBOLS='+symbols+'&RANGE=2023-07-01&RANGE=2023-08-31&INTERVAL=DAILY&OHLC=close&CALCULATIONS=MEAN,STDDEV,CORRELATION&apikey=B8DRZT1OHQPV2UAV'
     r = requests.get(url)
     data_analytics = r.json()
     st.dataframe(pd.DataFrame(data_analytics['payload']['RETURNS_CALCULATIONS']['STDDEV'], index=[0]).T)
