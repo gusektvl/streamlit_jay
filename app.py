@@ -24,6 +24,7 @@ from reits import *
 from econ import *
 from settings import *
 from dart import *
+from alphavantage import *
 
 fred = Fred(api_key='adf294d9c5f0940de2dc75f248e017ae')
 
@@ -129,12 +130,11 @@ menu = {
                 'styles': styles
             }
         },
-        'test': {
+        'alpha vantage_test': {
             'action': None, 'item_icon': 'gear', 'submenu': {
                 'title': None,
                 'items': {
                     'Manage Credentials': {'action': settings_panel_1, 'item_icon': 'key', 'submenu': None},
-                    'View Logs': {'action': setting_panel_2, 'item_icon': 'journals', 'submenu': None},
                 },
                 'menu_icon': None,
                 'default_index': 0,
