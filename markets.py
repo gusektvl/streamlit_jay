@@ -14,7 +14,7 @@ def news():
     )
 
 def sector():
-    components.html()
+    components.html("""""")
 
 
 def company():
