@@ -17,8 +17,8 @@ def news():
   "market": "index",
   "isTransparent": false,
   "displayMode": "adaptive",
-  "width": "100%",
-  "height": "100%",
+  "width": "1200",
+  "height": "2000",
   "colorTheme": "light",
   "locale": "en"
 }
