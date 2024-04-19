@@ -160,8 +160,8 @@ def show_menu(menu):
 
 
 def main():
-
     show_menu(menu)
+
     components.html(
         """
         <!-- TradingView Widget BEGIN -->

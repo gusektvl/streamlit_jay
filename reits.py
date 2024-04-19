@@ -18,7 +18,7 @@ def news():
   "isTransparent": false,
   "displayMode": "adaptive",
   "width": "100%",
-  "height": "100%",
+  "height": "300%",
   "colorTheme": "light",
   "locale": "en"
 }
