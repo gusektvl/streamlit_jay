@@ -134,7 +134,7 @@ menu = {
             'action': None, 'item_icon': 'gear', 'submenu': {
                 'title': None,
                 'items': {
-                    'Manage Credentials': {'action': settings_panel_1, 'item_icon': 'key', 'submenu': None},
+                    'test': {'action': alphavantage_test, 'item_icon': 'key', 'submenu': None},
                 },
                 'menu_icon': None,
                 'default_index': 0,
