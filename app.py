@@ -69,6 +69,7 @@ menu = {
             'submenu': {
                 'title': None,
                 'items': {
+                    'News' : {'action': news, 'item_icon': 'list-task', 'submenu': None},
                     'Sector' : {'action': reits_sector, 'item_icon': 'list-task', 'submenu': None},
                     'Stock' : {'action': reits_company, 'item_icon': 'graph-up', 'submenu': None},
                     'Screener' : {'action': reits_screener, 'item_icon': 'cart4', 'submenu': None},
