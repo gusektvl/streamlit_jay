@@ -6,8 +6,21 @@ import streamlit as st
 def alphavantage_test():
     url_top = 'https://www.alphavantage.co/query?function=TOP_GAINERS_LOSERS&apikey= B8DRZT1OHQPV2UAV'
     r_top = requests.get(url_top)
-    data_top = r_top.json()
-    st.title('Stock Market Updates')
-    st.subheader(data_top['metadata'])
-    st.write('Last Updated:', data_top['last_updated'])
-    st.dataframe(data_top['top_gainers'])
+    data = r_top.json()
+    st.title('Top Gainers, Losers, and Most Actively Traded US Tickers')
+    st.write(f"Last Updated: {data['last_updated']}")
+
+    # Top Gainers 데이터프레임 생성 및 표시
+    st.header('Top Gainers')
+    df_gainers = pd.DataFrame(data['top_gainers'])
+    st.dataframe(df_gainers)
+
+    # Top Losers 데이터프레임 생성 및 표시
+    st.header('Top Losers')
+    df_losers = pd.DataFrame(data['top_losers'])
+    st.dataframe(df_losers)
+
+    # Most Actively Traded 데이터프레임 생성 및 표시
+    st.header('Most Actively Traded')
+    df_active = pd.DataFrame(data['most_actively_traded'])
+    st.dataframe(df_active)

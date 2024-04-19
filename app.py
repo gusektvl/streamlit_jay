@@ -130,7 +130,7 @@ menu = {
                 'styles': styles
             }
         },
-        'alpha vantage_test': {
+        'Alpha vantage_test': {
             'action': None, 'item_icon': 'gear', 'submenu': {
                 'title': None,
                 'items': {
