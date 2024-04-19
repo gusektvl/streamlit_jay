@@ -580,8 +580,8 @@ def company():
             </script>
         </html>
         """,
-        height=700,
-        width=1350
+        height="100%",
+        width="100%"
     )
 
 def reits_screener():
