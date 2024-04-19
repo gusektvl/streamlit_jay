@@ -30,11 +30,25 @@ def fetch_dart_disclosures(url):
     return pd.DataFrame(disclosures)
 
 def dart_test():
-    # Streamlit 앱
     st.title('DART Recent Disclosures')
     url = "https://dart.fss.or.kr/dsac001/mainAll.do"
     data = fetch_dart_disclosures(url)
+
     if not data.empty:
-        st.dataframe(data)  # 데이터 프레임을 통해 상호작용 가능한 테이블 표시
+        # 첫 번째 열을 숨기기 위해 첫 번째 열을 제외하고 데이터 프레임 생성
+        data_display = data[['Company Name', 'Report Name', 'Submission Date']]
+
+        # CSS를 사용하여 테이블 스타일을 조정
+        st.markdown("""
+            <style>
+            .dataframe th, .dataframe td {
+                text-align: left;
+                min-width: 150px;  /* 셀 최소 너비 조정 */
+                max-width: 300px;  /* 셀 최대 너비 조정 */
+            }
+            </style>
+            """, unsafe_allow_html=True)
+
+        st.dataframe(data_display)  # 데이터 프레임을 통해 상호작용 가능한 테이블 표시
     else:
         st.write("No data available")
