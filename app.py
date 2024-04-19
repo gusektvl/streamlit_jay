@@ -180,7 +180,6 @@ def show_menu(menu):
         with st.sidebar:
             menu_selection = option_menu(**kwargs)
 
-
     elif with_view_panel == 'main':
         menu_selection = option_menu(**kwargs)
     else:
@@ -245,7 +244,6 @@ def main():
         <!-- TradingView Widget END -->
     """
     )
-
     return None
 
 
