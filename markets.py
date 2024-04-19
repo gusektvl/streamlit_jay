@@ -11,10 +11,12 @@ def news():
         st.dataframe(articles), width=1200, height=2000
     )
 
+
 def sector():
     components.html(
         width=1200, height=1200
     )
+
 
 def company():
     html_code ="""
@@ -482,6 +484,7 @@ def company():
         </html>
         """
     components.html(html_code, height=3000, width=1350)
+
 
 def screener():
     components.html(

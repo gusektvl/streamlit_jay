@@ -20,7 +20,7 @@ from fredapi import Fred
 import pygwalker as pyg
 from backtesting import backtesting_test
 import streamlit.components.v1 as components
-from reits import *
+from markets import *
 from econ import *
 from settings import *
 from dart import *
