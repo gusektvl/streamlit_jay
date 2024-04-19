@@ -268,10 +268,10 @@ def company():
                 </style>
             </head>
             <body>
-                <header>
-                    <a id="site-logo" href="#">Test</a>
-                    <input type="search" placeholder="Search..." />
-                </header>
+                <!--header-->
+                    <!--a id="site-logo" href="#">Test...</a-->
+                    <!--input type="search" placeholder="Search..." /-->
+                <!--/header-->
                 <nav id="ticker-tape"></nav>
                 <main>
                     <section id="symbol-info">
