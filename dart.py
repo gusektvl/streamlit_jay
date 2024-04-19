@@ -31,7 +31,7 @@ def fetch_dart_disclosures(url):
     return pd.DataFrame(disclosures)
 
 def dart_test():
-    st.title('DART Recent Disclosures')
+    st.title('DART 최근 공시')
     date = dt.datetime.today().strftime("%Y.%m.%d")
     url = "https://dart.fss.or.kr/dsac001/mainAll.do?selectDate="+date+"&sort=&series=&mdayCnt=0"
     data = fetch_dart_disclosures(url)

@@ -66,7 +66,7 @@ menu = {
         },
         "Markets" : {
             'action': None,
-            'item_icon': 'building',
+            'item_icon': 'activity',
             'submenu': {
                 'title': None,
                 'items': {
@@ -121,6 +121,20 @@ menu = {
                 'items': {
                     'Manage Credentials' : {'action': settings_panel_1, 'item_icon': 'key', 'submenu': None},
                     'View Logs' : {'action': setting_panel_2, 'item_icon': 'journals', 'submenu': None},
+                },
+                'menu_icon': None,
+                'default_index': 0,
+                'with_view_panel': 'main',
+                'orientation': 'horizontal',
+                'styles': styles
+            }
+        },
+        'test': {
+            'action': None, 'item_icon': 'gear', 'submenu': {
+                'title': None,
+                'items': {
+                    'Manage Credentials': {'action': settings_panel_1, 'item_icon': 'key', 'submenu': None},
+                    'View Logs': {'action': setting_panel_2, 'item_icon': 'journals', 'submenu': None},
                 },
                 'menu_icon': None,
                 'default_index': 0,
