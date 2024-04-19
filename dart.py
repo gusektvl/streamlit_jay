@@ -19,7 +19,7 @@ def fetch_dart_disclosures(url):
             cells = row.find_all('td')
             if len(cells) > 4:
                 time = cells[0].get_text(strip=True)
-                company_name = cells[1].get_text(strip=True)
+                company_name = cells[1].get_text(strip=True)[1:]
                 report_name = cells[2].get_text(strip=True)
                 submission_date = cells[4].get_text(strip=True)
                 disclosures.append({
